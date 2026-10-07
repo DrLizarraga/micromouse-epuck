@@ -187,3 +187,14 @@ computadora.
   se hace con la plantilla LaTeX **BitacoraSKv2**, que ya viene en
   [`docs/bitacora/plantilla/`](docs/bitacora/plantilla/): trabajen sobre `main.tex`.
   El [manual de uso](docs/bitacora/Manual_de_Uso_BitacoraSKv2.pdf) explica cómo usarla.
+
+---
+
+## Licencia
+
+Este repositorio se distribuye bajo la [licencia MIT](LICENSE).
+
+El logotipo del ITESO (`docs/bitacora/plantilla/figures/logoiteso.png`) es
+propiedad del ITESO y no está cubierto por esta licencia. El modelo del e-puck
+y los fondos de los mundos son de Cyberbotics: los mundos solo los referencian
+(no se incluyen aquí) y se rigen por la licencia de Webots.
