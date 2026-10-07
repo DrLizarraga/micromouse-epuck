@@ -12,12 +12,17 @@ slprj/
 results/*
 !results/.gitkeep
 
-# LaTeX
-docs/*.aux
-docs/*.log
-docs/*.out
-docs/*.toc
-docs/*.synctex.gz
+# LaTeX (archivos generados al compilar)
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.lof
+*.lot
+*.synctex.gz
+docs/bitacora/plantilla/main.pdf
 
 # Webots (miniaturas)
 worlds/.*.jpg

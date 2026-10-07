@@ -16,9 +16,10 @@ laberinto **sorpresa de 16 × 16** y los equipos compiten uno contra uno.
 
 ## Documentos
 
-- [Convocatoria](docs/Convocatoria.pdf)
-- [Reglamento](docs/Reglamento.pdf): es la referencia oficial; este README solo lo resume.
-- [Manual de Uso BitacoraSKv2](docs/Manual_de_Uso_BitacoraSKv2.pdf): plantilla del reporte técnico.
+- [Convocatoria](docs/convocatoria/Convocatoria.pdf)
+- [Reglamento](docs/reglamento/Reglamento.pdf): es la referencia oficial; este README solo lo resume.
+- Reporte técnico: [plantilla LaTeX BitacoraSKv2](docs/bitacora/plantilla/) y su
+  [manual de uso](docs/bitacora/Manual_de_Uso_BitacoraSKv2.pdf).
 
 ---
 
@@ -51,7 +52,9 @@ laberinto **sorpresa de 16 × 16** y los equipos compiten uno contra uno.
 | `controllers/referee/` | Árbitro automático (Supervisor). **No modificar** |
 | `protos/` | Pared y poste con dimensiones IEEE |
 | `results/` | Resultados del árbitro (`resultados.csv` y el detalle de cada concurso) |
-| `docs/` | Convocatoria, reglamento y manual de la plantilla del reporte |
+| `docs/convocatoria/` | Convocatoria (PDF) |
+| `docs/reglamento/` | Reglamento (PDF) |
+| `docs/bitacora/` | Plantilla LaTeX del reporte técnico (`plantilla/`) y su manual de uso (PDF) |
 
 ---
 
@@ -181,6 +184,6 @@ computadora.
 - [ ] **Entrega del controlador final**: **martes 17 de noviembre (semana 14)**. Esa semana se revisa que funcione en el equipo del profesor; las correcciones de compatibilidad se aceptan hasta el viernes 20 de noviembre.
 - [ ] **Torneo**: **semana 15, del 23 al 27 de noviembre**
 - [ ] **Reporte técnico y video**: semana 15, del 23 al 27 de noviembre. El reporte
-  se hace con la plantilla LaTeX **BitacoraSKv2**. El
-  [Manual de Uso BitacoraSKv2](docs/Manual_de_Uso_BitacoraSKv2.pdf) trae el enlace
-  de descarga, que se abre con el correo institucional.
+  se hace con la plantilla LaTeX **BitacoraSKv2**, que ya viene en
+  [`docs/bitacora/plantilla/`](docs/bitacora/plantilla/): trabajen sobre `main.tex`.
+  El [manual de uso](docs/bitacora/Manual_de_Uso_BitacoraSKv2.pdf) explica cómo usarla.
