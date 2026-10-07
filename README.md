@@ -18,6 +18,7 @@ laberinto **sorpresa de 16 × 16** y los equipos compiten uno contra uno.
 
 - [Convocatoria](docs/Convocatoria.pdf)
 - [Reglamento](docs/Reglamento.pdf): es la referencia oficial; este README solo lo resume.
+- [Manual de Uso BitacoraSKv2](docs/Manual_de_Uso_BitacoraSKv2.pdf): plantilla del reporte técnico.
 
 ---
 
@@ -50,7 +51,7 @@ laberinto **sorpresa de 16 × 16** y los equipos compiten uno contra uno.
 | `controllers/referee/` | Árbitro automático (Supervisor). **No modificar** |
 | `protos/` | Pared y poste con dimensiones IEEE |
 | `results/` | Resultados del árbitro (`resultados.csv` y el detalle de cada concurso) |
-| `docs/` | Convocatoria y reglamento |
+| `docs/` | Convocatoria, reglamento y manual de la plantilla del reporte |
 
 ---
 
@@ -179,4 +180,7 @@ computadora.
 - [ ] **H4, robot completo**: regreso, corridas rápidas y uso de todos los dispositivos (martes 17 de noviembre)
 - [ ] **Entrega del controlador final**: **martes 17 de noviembre (semana 14)**. Esa semana se revisa que funcione en el equipo del profesor; las correcciones de compatibilidad se aceptan hasta el viernes 20 de noviembre.
 - [ ] **Torneo**: **semana 15, del 23 al 27 de noviembre**
-- [ ] **Reporte técnico y video**: semana 15, del 23 al 27 de noviembre
+- [ ] **Reporte técnico y video**: semana 15, del 23 al 27 de noviembre. El reporte
+  se hace con la plantilla LaTeX **BitacoraSKv2**. El
+  [Manual de Uso BitacoraSKv2](docs/Manual_de_Uso_BitacoraSKv2.pdf) trae el enlace
+  de descarga, que se abre con el correo institucional.
