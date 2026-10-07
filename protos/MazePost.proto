@@ -1,0 +1,60 @@
+#VRML_SIM R2025a utf8
+# template language: javascript
+# Poste del laberinto Micromouse (estandar IEEE clasico):
+# 1.2 cm x 1.2 cm de seccion, 5 cm de alto. Lados blancos y tapa roja.
+# translation es el centro de la base.
+# Nota: los sensores IR del e-puck dependen del color (rojo) y de la rugosidad
+# del material; roughness 0 y blanco dan la reflexion maxima (factor 1).
+
+PROTO MazePost [
+  field SFVec3f    translation 0 0 0
+  field SFRotation rotation    0 0 1 0
+  field SFString   name        "poste"
+  field SFFloat    length      0.012
+  field SFFloat    thickness   0.012
+  field SFFloat    height      0.05
+]
+{
+  %<
+    const p = fields.translation.value;
+    const L = fields.length.value;
+    const T = fields.thickness.value;
+    const H = fields.height.value;
+  >%
+  Solid {
+    translation %<= p.x >% %<= p.y >% %<= p.z + H / 2 >%
+    rotation IS rotation
+    name IS name
+    children [
+      Shape {
+        appearance PBRAppearance {
+          baseColor 1 1 1
+          roughness 0
+          metalness 0
+        }
+        geometry Box {
+          size %<= L >% %<= T >% %<= H >%
+        }
+      }
+      Pose {
+        translation 0 0 %<= H / 2 + 0.0005 >%
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.8 0 0
+              roughness 1
+              metalness 0
+            }
+            geometry Box {
+              size %<= L >% %<= T >% 0.001
+            }
+          }
+        ]
+      }
+    ]
+    boundingObject Box {
+      size %<= L >% %<= T >% %<= H >%
+    }
+    model "MazePost"
+  }
+}
